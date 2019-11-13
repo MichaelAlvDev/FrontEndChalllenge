@@ -25,7 +25,7 @@ class product extends Component {
               <span>{this.props.productPrice}</span>
               <br />
             </p>
-            <button>Comprar</button>
+            <button type="button" className="btn  btn-secondary">Comprar</button>
           </div>
         </div>
       </div>
