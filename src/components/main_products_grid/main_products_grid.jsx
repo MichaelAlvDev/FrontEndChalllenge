@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./main_products_grid.scss";
+import Product from "../product/product.jsx";
 const APIProducts = "/data/products.json";
 
 class main_products_grid extends Component {
@@ -29,20 +30,19 @@ class main_products_grid extends Component {
     //Data luego de filtrar
     let dataProductsFiltered = dataProducts;
     return (
-      <div className="jumbotron">
+      <div className="jumbotron col-md-10 Grid-container">
         {dataProductsFiltered.map(product => (
-          <p>{product.name}</p>
-          // <Producto
-          //   key={product.id}
-            // productName={product.name}
-          //   productQuantity={product.quantity}
-          //   productPrice={product.price}
-          //   productAvailable={product.avalailable}
-          //   productSublevel={product.sublevel_id}
-          //   productId={product.id}
-          // />     
+          <Product
+            key={product.id}
+            productName={product.name}
+            productQuantity={product.quantity}
+            productPrice={product.price}
+            productAvailable={product.avalailable}
+            productSublevel={product.sublevel_id}
+            productId={product.id}
+          />
         ))}
-        </div>
+      </div>
     );
   }
 }

@@ -4,7 +4,11 @@ import "./sidebar.scss";
 class sidebar extends Component {
   state = {};
   render() {
-    return <h1>sidebar</h1>;
+    return(
+      <div id="sidebar" className="col-md-2  bg-secondary text-white">
+        Sidebar
+      </div>
+    );
   }
 }
 
