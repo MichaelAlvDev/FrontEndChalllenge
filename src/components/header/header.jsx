@@ -45,7 +45,7 @@ class header extends Component {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-                <i class="fas fa-shopping-cart"></i>
+                <i className="fas fa-shopping-cart"></i>
               </a>
             </li>
           </ul>
