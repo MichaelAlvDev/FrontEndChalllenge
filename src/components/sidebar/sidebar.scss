@@ -1,5 +1,6 @@
-#sidebar{
-    display: inline-flex;
-    min-height: 100vh;
-    vertical-align: top;
+#sidebar {
+  display: inline-flex;
+  min-height: 100vh;
+  vertical-align: top;
+  flex-direction: column;
 }
